@@ -1,0 +1,47 @@
+timestamp,interface,can_id,system,signal,raw_value,value,unit,status,data
+1719672101.1,can0,256,engine,Engine RPM,3200,3200,rpm,Operating withing normal limits,0c80000000000000
+1719672101.2,can0,257,engine,Engine Coolant Temperature,92,92,C,Operating withing normal limits,5c00000000000000
+1719672101.3,can0,258,engine,Engine Air Intake Temperature,34,34,C,Operating withing normal limits,2200000000000000
+1719672101.4,can0,259,engine,Throttle Position,67,67,%,Operating withing normal limits,4300000000000000
+1719672101.5,can0,260,engine,Air Fuel Ratio,140,14.0,afr,Operating withing normal limits,008c000000000000
+1719672101.6,can0,261,engine,Ignition Timing,160,16.0,deg,Operating withing normal limits,00a0000000000000
+1719672101.1,can0,262,engine,Ignition Correction,-250,-25.0,deg,critical: Operating below critical limit,ff06000000000000
+1719672101.2,can0,263,engine,Engine Load,72,72,%,Operating withing normal limits,4800000000000000
+1719672101.3,can0,264,engine,Lambda,982,0.982,lambda,Operating withing normal limits,03d6000000000000
+1719672101.4,can0,265,engine,Knock Count,3,3,count,Operating withing normal limits,0300000000000000
+1719672101.7,can0,512,oil,Oil Pressure,61,61,psi,Operating withing normal limits,3d00000000000000
+1719672101.8,can0,513,oil,Oil Temperature,108,108,C,Operating withing normal limits,6c00000000000000
+1719672101.9,can0,514,oil,Oil Level,88,88,%,Operating withing normal limits,5800000000000000
+1719672101.5,can0,515,oil,Accusump Pressure,58,58,psi,Operating withing normal limits,3a00000000000000
+1719672102.0,can0,768,turbo,Turbo Boost Pressure,1480,148.0,psi,critical: Operating above critical limit,05c8000000000000
+1719672102.1,can0,769,turbo,Turbo Wastegate Duty,63,63,%,Operating withing normal limits,3f00000000000000
+1719672102.2,can0,770,turbo,Turbo Shaft Speed,1,100,rpm,Operating withing normal limits,0001000000000000
+1719672101.6,can0,771,turbo,Charge Air Temperature,41,41,C,Operating withing normal limits,2900000000000000
+1719672102.3,can0,1024,cooling,Radiator Outlet Temperature,79,79,C,Operating withing normal limits,4f00000000000000
+1719672102.4,can0,1025,cooling,Cooling Fan Speed,72,72,rpm,Operating withing normal limits,0048000000000000
+1719672101.7,can0,1026,cooling,Water Pump Speed,2400,2400,rpm,Operating withing normal limits,0960000000000000
+1719672101.8,can0,1027,cooling,Cooling Fan Duty,68,68,%,Operating withing normal limits,4400000000000000
+1719672102.5,can0,1280,transmission,Current Gear Position,3,3,,Operating withing normal limits,0300000000000000
+1719672102.6,can0,1281,transmission,Transmission Temperature,84,84,C,Operating withing normal limits,5400000000000000
+1719672101.9,can0,1282,transmission,Clutch Position,37,37,%,Operating withing normal limits,2500000000000000
+1719672102.0,can0,1283,transmission,Differential Temperature,89,89,C,Operating withing normal limits,5900000000000000
+1719672102.7,can0,1536,electrical,Battery Voltage,1600,160.0,V,critical: Operating above critical limit,0640000000000000
+1719672102.8,can0,1537,electrical,Alternator Voltage,130,13.0,V,Operating withing normal limits,0082000000000000
+1719672102.1,can0,1537,electrical,Alternator Voltage,1600,160.0,V,critical: Operating above critical limit,0640000000000000
+1719672102.2,can0,1538,electrical,Current Draw,1840,184.0,A,Operating withing normal limits,0730000000000000
+1719672102.9,can0,1792,alerts,Knock Alert Status,0,OK,,Operating withing normal limits,0000000000000000
+1719672103.0,can0,1793,alerts,Low Oil Pressure Alert,0,OK,,Operating withing normal limits,0000000000000000
+1719672103.1,can0,1794,alerts,Overboost Alert,0,OK,,Operating withing normal limits,0000000000000000
+1719672102.3,can0,1795,alerts,Overheat Alert,0,OK,,Operating withing normal limits,0000000000000000
+1719672102.4,can0,1796,alerts,Sensor Fault Alert,1,Warning,,Operating withing normal limits,0100000000000000
+1719672103.2,can0,2048,wheels,Front Left Wheel Speed,640,64.0,kmh,Operating withing normal limits,0280000000000000
+1719672103.3,can0,2049,wheels,Front Right Wheel Speed,640,64.0,kmh,Operating withing normal limits,0280000000000000
+1719672103.4,can0,2050,wheels,Rear Left Wheel Speed,670,67.0,kmh,Operating withing normal limits,029e000000000000
+1719672103.5,can0,2051,wheels,Rear Right Wheel Speed,690,69.0,kmh,Operating withing normal limits,02b2000000000000
+1719672103.6,can0,2304,stability,Steering Angle,120,12.0,deg,Operating withing normal limits,0078000000000000
+1719672103.7,can0,2305,stability,Yaw Rate,40,4.0,deg/s,Operating withing normal limits,0028000000000000
+1719672103.8,can0,2306,stability,Lateral G Force,100,1.0,g,Operating withing normal limits,0064000000000000
+1719672103.9,can0,2307,stability,Longitudinal G Force,-100,-1.0,g,Operating withing normal limits,ff9c000000000000
+1719672102.5,can0,2308,stability,Brake Pressure Front,2450,245.0,bar,Operating withing normal limits,0992000000000000
+1719672102.6,can0,2309,stability,Brake Pressure Rear,1980,198.0,bar,Operating withing normal limits,07bc000000000000
+1719672101.1,can0,2560,alerts,Alert Flags,0,OK,,Operating withing normal limits,0000000000000000

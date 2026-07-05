@@ -1,0 +1,372 @@
+[
+  {
+    "timestamp": 1719672101.1,
+    "interface": "can0",
+    "id": "0x100",
+    "signal": "Engine RPM",
+    "value": 3200
+  },
+
+  {
+    "timestamp": 1719672101.2,
+    "interface": "can0",
+    "id": "0x101",
+    "signal": "Engine Coolant Temperature",
+    "value": 92
+  },
+
+  {
+    "timestamp": 1719672101.3,
+    "interface": "can0",
+    "id": "0x102",
+    "signal": "Engine Air Intake Temperature",
+    "value": 34
+  },
+
+  {
+    "timestamp": 1719672101.4,
+    "interface": "can0",
+    "id": "0x103",
+    "signal": "Throttle Position",
+    "value": 67
+  },
+
+  {
+    "timestamp": 1719672101.5,
+    "interface": "can0",
+    "id": "0x104",
+    "signal": "Air Fuel Ratio",
+    "value": 14
+  },
+
+  {
+    "timestamp": 1719672101.6,
+    "interface": "can0",
+    "id": "0x105",
+    "signal": "Ignition Timing",
+    "value": 16
+  },
+
+    {
+    "timestamp": 1719672101.1,
+    "interface": "can0",
+    "id": "0x106",
+    "signal": "Ignition Correction",
+    "value": -25
+  },
+
+  {
+    "timestamp": 1719672101.2,
+    "interface": "can0",
+    "id": "0x107",
+    "signal": "Engine Load",
+    "value": 72
+  },
+
+  {
+    "timestamp": 1719672101.3,
+    "interface": "can0",
+    "id": "0x108",
+    "signal": "Lambda",
+    "value": 0.982
+  },
+
+  {
+    "timestamp": 1719672101.4,
+    "interface": "can0",
+    "id": "0x109",
+    "signal": "Knock Count",
+    "value": 3
+  },
+
+  {
+    "timestamp": 1719672101.7,
+    "interface": "can0",
+    "id": "0x200",
+    "signal": "Oil Pressure",
+    "value": 61
+  },
+
+  {
+    "timestamp": 1719672101.8,
+    "interface": "can0",
+    "id": "0x201",
+    "signal": "Oil Temperature",
+    "value": 108
+  },
+
+  {
+    "timestamp": 1719672101.9,
+    "interface": "can0",
+    "id": "0x202",
+    "signal": "Oil Level",
+    "value": 88
+  },
+
+  {
+    "timestamp": 1719672101.5,
+    "interface": "can0",
+    "id": "0x203",
+    "signal": "Accusump Pressure",
+    "value": 58
+  },
+
+  {
+    "timestamp": 1719672102.0,
+    "interface": "can0",
+    "id": "0x300",
+    "signal": "Turbo Boost Pressure",
+    "value": 40.0
+  },
+
+  {
+    "timestamp": 1719672102.1,
+    "interface": "can0",
+    "id": "0x301",
+    "signal": "Turbo Wastegate Duty",
+    "value": 63
+  },
+
+  {
+    "timestamp": 1719672102.2,
+    "interface": "can0",
+    "id": "0x302",
+    "signal": "Turbo Shaft Speed",
+    "value": 120
+  },
+
+  {
+    "timestamp": 1719672101.6,
+    "interface": "can0",
+    "id": "0x303",
+    "signal": "Charge Air Temperature",
+    "value": 41
+  },
+
+  {
+    "timestamp": 1719672102.3,
+    "interface": "can0",
+    "id": "0x400",
+    "signal": "Radiator Outlet Temperature",
+    "value": 79
+  },
+
+  {
+    "timestamp": 1719672102.4,
+    "interface": "can0",
+    "id": "0x401",
+    "signal": "Cooling Fan Speed",
+    "value": 72
+  },
+
+    {
+    "timestamp": 1719672101.7,
+    "interface": "can0",
+    "id": "0x402",
+    "signal": "Water Pump Speed",
+    "value": 2400
+  },
+
+  {
+    "timestamp": 1719672101.8,
+    "interface": "can0",
+    "id": "0x403",
+    "signal": "Cooling Fan Duty",
+    "value": 68
+  },
+
+  {
+    "timestamp": 1719672102.5,
+    "interface": "can0",
+    "id": "0x500",
+    "signal": "Current Gear Position",
+    "value": 3
+  },
+
+  {
+    "timestamp": 1719672102.6,
+    "interface": "can0",
+    "id": "0x501",
+    "signal": "Transmission Temperature",
+    "value": 84
+  },
+
+
+  {
+    "timestamp": 1719672101.9,
+    "interface": "can0",
+    "id": "0x502",
+    "signal": "Clutch Position",
+    "value": 37
+  },
+
+  {
+    "timestamp": 1719672102.0,
+    "interface": "can0",
+    "id": "0x503",
+    "signal": "Differential Temperature",
+    "value": 89
+  },
+
+  {
+    "timestamp": 1719672102.7,
+    "interface": "can0",
+    "id": "0x600",
+    "signal": "Battery Voltage",
+    "value": 15.0
+  },
+
+  {
+    "timestamp": 1719672102.8,
+    "interface": "can0",
+    "id": "0x601",
+    "signal": "Alternator Output",
+    "value": 13.0
+  },
+
+    {
+    "timestamp": 1719672102.1,
+    "interface": "can0",
+    "id": "0x601",
+    "signal": "Alternator Voltage",
+    "value": 160
+  },
+
+  {
+    "timestamp": 1719672102.2,
+    "interface": "can0",
+    "id": "0x602",
+    "signal": "Current Draw",
+    "value": 184
+  },
+
+  {
+    "timestamp": 1719672102.9,
+    "interface": "can0",
+    "id": "0x700",
+    "signal": "Knock Alert Status",
+    "value": 0
+  },
+
+  {
+    "timestamp": 1719672103.0,
+    "interface": "can0",
+    "id": "0x701",
+    "signal": "Low Oil Pressure Alert",
+    "value": 0
+  },
+
+  {
+    "timestamp": 1719672103.1,
+    "interface": "can0",
+    "id": "0x702",
+    "signal": "Overboost Alert",
+    "value": 0
+  },
+
+  {
+    "timestamp": 1719672102.3,
+    "interface": "can0",
+    "id": "0x703",
+    "signal": "Overheat Alert",
+    "value": 0
+  },
+
+  {
+    "timestamp": 1719672102.4,
+    "interface": "can0",
+    "id": "0x704",
+    "signal": "Sensor Fault Alert",
+    "value": 1
+  },
+
+  {
+    "timestamp": 1719672103.2,
+    "interface": "can0",
+    "id": "0x800",
+    "signal": "Front Left Wheel Speed",
+    "value": 64
+  },
+
+  {
+    "timestamp": 1719672103.3,
+    "interface": "can0",
+    "id": "0x801",
+    "signal": "Front Right Wheel Speed",
+    "value": 64
+  },
+
+  {
+    "timestamp": 1719672103.4,
+    "interface": "can0",
+    "id": "0x802",
+    "signal": "Rear Left Wheel Speed",
+    "value": 67
+  },
+
+  {
+    "timestamp": 1719672103.5,
+    "interface": "can0",
+    "id": "0x803",
+    "signal": "Rear Right Wheel Speed",
+    "value": 69
+  },
+
+  {
+    "timestamp": 1719672103.6,
+    "interface": "can0",
+    "id": "0x900",
+    "signal": "Steering Angle",
+    "value": 12
+  },
+
+  {
+    "timestamp": 1719672103.7,
+    "interface": "can0",
+    "id": "0x901",
+    "signal": "Yaw Rate",
+    "value": 4
+  },
+
+  {
+    "timestamp": 1719672103.8,
+    "interface": "can0",
+    "id": "0x902",
+    "signal": "Lateral G Force",
+    "value": 1
+  },
+
+  {
+    "timestamp": 1719672103.9,
+    "interface": "can0",
+    "id": "0x903",
+    "signal": "Longitudinal G Force",
+    "value": -1
+  },
+
+  {
+    "timestamp": 1719672102.5,
+    "interface": "can0",
+    "id": "0x904",
+    "signal": "Brake Pressure Front",
+    "value": 245
+  },
+
+  {
+    "timestamp": 1719672102.6,
+    "interface": "can0",
+    "id": "0x905",
+    "signal": "Brake Pressure Rear",
+    "value": 198
+  },
+
+  {
+    "timestamp":1719672101.1,
+    "interface":"can0",
+    "id": "0xA00",
+    "signal": "Alert Flags",
+    "value": 0
+  }
+
+]
+
