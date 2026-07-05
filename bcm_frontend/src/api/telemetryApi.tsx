@@ -23,9 +23,21 @@ export async function hideSignal(
     system: string,
     signal: string
 ) {
-    const res = await fetch(`${API_BASE}/api/${system}/${signal}`,
+    const res = await fetch(`${API_BASE}/api/signals/${system}/${signal}`,
         {
             method: "DELETE"
+        }
+    );
+    return res.json();
+};
+
+export async function showSignal(
+    system: string,
+    signal: string
+) {
+    const res = await fetch(`${API_BASE}/api/signals/${system}/${signal}/show`,
+        {
+            method: "POST"
         }
     );
     return res.json();

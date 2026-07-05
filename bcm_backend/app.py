@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from urllib.parse import unquote
 
-from backend.telemerty_runtime import telemetry_state, start_replay
+from bcm_backend.telemerty_runtime import telemetry_state, start_replay
+from bcm_backend.display_config import is_signal_visible, set_signal_visible
 
-from src.signals import SIGNALS
+from bcm_can_parser.src.signals import SIGNALS
 
 app = FastAPI()
 
@@ -28,7 +30,7 @@ def get_telemetry():
 
     for system, signals in telemetry_state.items():
         for signal_name, data in signals.items():
-            if (system, signal_name) in hidden_signals:
+            if not is_signal_visible(system, signal_name):
                 continue
 
             filtered.setdefault(system, {})
@@ -43,7 +45,7 @@ def replay_start():
 
 @app.get("/api/debug")
 def debug():
-    from backend.telemerty_runtime import INPUT_LOG, is_running
+    from telemerty_runtime import INPUT_LOG, is_running
     return {
         "input_log": str(INPUT_LOG.resolve()),
         "log_exists": INPUT_LOG.exists(),
@@ -54,12 +56,36 @@ def debug():
 @app.get("/api/signals")
 def get_signals():
     return {
-        f"0x{can_id:x}": definition
+        f"0x{can_id:x}": {
+            **definition,
+            "visible": is_signal_visible(
+                definition["system"],
+                definition["signal"]
+            )
+        }
         for can_id, definition in SIGNALS.items()
     }
 
 @app.delete("/api/signals/{system}/{signal_name}")
 def hide_signal(system: str, signal_name: str):
-    hidden_signals.add((system, signal_name))
-    return {"status": "hidden", "system": system, "signal": signal_name}
+    print("DELETE called:", system, signal_name)
 
+    result = set_signal_visible(system, signal_name, False)
+    print("Result:", result)
+    return result
+
+@app.post("/api/signals/{system}/{signal_name}/show")
+def show_signal(system: str, signal_name: str):
+    signal_name = unquote(signal_name)
+    return set_signal_visible(system,signal_name, True)
+
+
+@app.get("/api/debug/display-config")
+def debug_display_config():
+    from display_config import CONFIG_PATH, load_display_config
+
+    return {
+        "config_path": str(CONFIG_PATH),
+        "exists": CONFIG_PATH.exists(),
+        "content": load_display_config(),
+    }

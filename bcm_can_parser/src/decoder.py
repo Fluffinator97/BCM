@@ -1,5 +1,5 @@
-from src.parser import CANFrame
-from src.signals import SIGNALS
+from bcm_can_parser.src.parser import CANFrame
+from bcm_can_parser.src.signals import SIGNALS
 
 
 def decode_basic(frame: CANFrame) -> dict:
