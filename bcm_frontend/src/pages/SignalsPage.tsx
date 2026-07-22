@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllSignals, hideSignal, showSignal } from "../api/telemetryApi";
+import { getAllSignals, hideSignal, showSignal, startTelemetry } from "../api/telemetryApi";
 
 function SignalsPage() {
     const [ signals, setSignals ] = useState<any>(null)
@@ -11,6 +11,7 @@ function SignalsPage() {
     return (
         <section>
             <h1>All Signals</h1>
+            <button onClick={() => startTelemetry()}>Start Replay</button>
 
             <div className="grid">
                 {signals &&

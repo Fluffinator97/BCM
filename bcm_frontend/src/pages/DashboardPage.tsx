@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { getTelemerty, startTelemetry, hideSignal } from "../api/telemetryApi";
+import { startTelemetry, hideSignal } from "../api/telemetryApi";
+import { connectTelemetrySocket } from "../api/telemetrySocket";
 
 const SYSTEM_ORDER = [
   "engine",
@@ -39,12 +40,26 @@ function DashboardPage() {
     const [data, setData] = useState<any>(null);
 
     useEffect(() => {
-      const interval = setInterval(() => {
-        getTelemerty().then(setData)
-    }, 500);
+      const socket = connectTelemetrySocket((message) => {
+        switch (message.type) {
+          case "telemetry":
+            setData(message.data);
+            break;
 
-    return () => clearInterval(interval)
-  }, [])
+            case "history":
+              console.log(
+                "History point:",
+                message.data.system,
+                message.data.signal,
+                message.data.point,
+              );
+              break;
+        }
+      });
+
+      return () => socket.close();
+      
+    }, [])
 
     const groups = groupTelemetry(data)
 
@@ -74,8 +89,6 @@ function DashboardPage() {
                             group.system, 
                             signal.signal
                         )
-                        const updated = await getTelemerty();
-                        setData(updated);
                         }}
                         >
                         Hide

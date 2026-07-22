@@ -42,3 +42,31 @@ export async function showSignal(
     );
     return res.json();
 };
+
+export async function getSignalHistory(
+    system: string,
+    signal: string,
+    limit: 300,
+) {
+    const url =
+        `${API_BASE}/api/telemetry/history/` +
+        `${encodeURIComponent(system)}/` +
+        `${encodeURIComponent(signal)}` +
+        `?limit=${limit}`
+
+    const response = await fetch(url)
+
+    if (!response.ok) {
+        if (response.status === 404) {
+            return {
+                system,
+                signal,
+                history: [],
+            };
+        }
+
+        throw new Error(`Failed to load signal history: ${response.status}`);
+    }
+
+    return response.json();
+}

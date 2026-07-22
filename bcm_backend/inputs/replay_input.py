@@ -28,11 +28,9 @@ class ReplayInput(TelemetryInput):
     
     def frames(self):
         loaded_frames = self.load_frames()
-        print("loading from:", self.log_path)
-        print("exists", self.log_path.exists())
+
 
         if not loaded_frames:
-            print("no frames loaded")
             return
         
         previous_timestamp = loaded_frames[0].timestamp
